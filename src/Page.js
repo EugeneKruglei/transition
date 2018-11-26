@@ -1,42 +1,43 @@
+/*
 import React from 'react';
-import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import { withRouter } from 'react-router-dom';
+import {withRouter} from 'react-router-dom';
 
 function Page({
-  children,
-  color,
-  background,
-  location: {
-    state,
-  },
-}) {
-  const cx = classNames({
-    page: true,
-    'page--prev': state && state.prev
-  });
-  return (
-    <section
-      className={cx}
-      style={{
-        color,
-        background,
-      }}
-    >
-      {children}
-    </section>
-  );
+                  children,
+                  color,
+                  background,
+                  location: {
+                      state,
+                  },
+              }) {
+    let cx = classNames({
+        page: false,
+        'page--prev': state && state.prev,
+    });
+    return (
+        <section
+            className={cx}
+            // style={{
+            //   color,
+            //   background,
+            // }}
+        >
+            {children}
+        </section>
+    );
 }
 
-Page.propTypes = {
+/!*Page.propTypes = {
   children: PropTypes.node.isRequired,
   color: PropTypes.string,
   background: PropTypes.string,
-};
+};*!/
 
-Page.defaultProps = {
+/!*Page.defaultProps = {
   color: '#fff',
   background: '#223',
-};
+};*!/
 
 export default withRouter(Page);
+*/

@@ -15,6 +15,7 @@ import Nav from './Nav';
 import Home from './Home';
 import About from './About';
 import Products from './Products';
+import Contact from './Contact';
 
 // Does the user's browser support the HTML5 history API?
 // If the user's browser doesn't support the HTML5 history API then we
@@ -35,8 +36,8 @@ const App = ({  }) => (
                   key={pathname}
                   classNames="page"
                   timeout={{
-                    enter: 1000,
-                    exit: 1000,
+                    enter: 300,
+                    exit: 300,
                   }}
                 >
                   <Route
@@ -52,14 +53,14 @@ const App = ({  }) => (
                           path="/about"
                           component={About}
                         />
-                          <Route
+                        <Route
                               path="/products"
                               component={Products}
-                          />
-                          <Route
+                        />
+                        <Route
                               path="/contact"
-                              component={Products}
-                          />
+                              component={Contact}
+                        />
                        {/* <Route
                           component={Error404}
                         />*/}

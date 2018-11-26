@@ -7,7 +7,7 @@ export default function Nav() {
       <Link
         to={{
           pathname: '/',
-          state: { prev: false },
+          state: { prev: false},
         }}
         className="nav__link"
       >
@@ -16,7 +16,7 @@ export default function Nav() {
       <Link
         to={{
           pathname: '/about',
-          state: { prev: false },
+          state: { prev: false},
         }}
         className="nav__link"
       >
@@ -25,7 +25,7 @@ export default function Nav() {
         <Link
             to={{
                 pathname: '/products',
-                state: { prev: false },
+                state: { prev: false},
             }}
             className="nav__link"
         >
@@ -34,7 +34,7 @@ export default function Nav() {
         <Link
             to={{
                 pathname: '/contact',
-                state: { prev: false },
+                state: { prev: false},
             }}
             className="nav__link"
         >
