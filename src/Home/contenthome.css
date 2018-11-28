@@ -1,0 +1,45 @@
+.block {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 70%;
+    background-color: white;
+    opacity: 0.7;
+    padding: 2em;
+    margin: auto 2em;
+}
+
+.block h1 {
+    color: #0088ff;
+}
+
+.block p {
+    color: black;
+    margin: 0.3em 0;
+}
+
+.slideUp {
+    animation-name: slideUp;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    visibility: visible !important;
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 0.7;
+    }
+}
+@media only screen and (min-device-width: 250px) and (max-device-width : 1023px){
+    .block {
+        font-size: 14px;
+        width: 100%;
+        padding: 1em;
+        margin: 0 0;
+    }
+}

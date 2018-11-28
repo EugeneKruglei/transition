@@ -11,11 +11,11 @@ import {
 } from 'react-transition-group';
 
 import './style.css';
-import Nav from './Nav';
-import Home from './Home';
-import About from './About';
-import Products from './Products';
-import Contact from './Contact';
+import Nav from './Navigation/Nav';
+import Home from './Home/Home';
+import About from './About/About';
+import Products from './Products/Products';
+import Contact from './Contact/Contact';
 
 // Does the user's browser support the HTML5 history API?
 // If the user's browser doesn't support the HTML5 history API then we
@@ -46,8 +46,9 @@ const App = ({  }) => (
                       <Switch>
                         <Route
                           exact
-                          path="/"
+                          path="/home"
                           component={Home}
+                          /*activeClassName="active"*/
                         />
                         <Route
                           path="/about"

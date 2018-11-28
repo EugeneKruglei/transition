@@ -1,12 +1,12 @@
 import React from 'react';
-import Page from './Page';
+import Page from '../Page';
 import './About.css';
 
 export default function About(props) {
     return (
         <div className="page about">
-            <section>
-                <h1>Products</h1>
+            <section className="block slideUp">
+                <h1>About</h1>
 
                 <p>Toffee muffin bear claw ice cream gummies jujubes gingerbread. Apple pie bonbon pastry chocolate bar
                     bear claw wafer bonbon. Marzipan topping wafer topping cake liquorice.</p>
@@ -20,8 +20,6 @@ export default function About(props) {
                 <p>Cotton candy apple pie soufflé jelly-o pudding chocolate cake carrot cake. Dessert croissant carrot
                     cake gummi bears donut icing cookie. Dessert chocolate cake pastry toffee tiramisu cookie.</p>
             </section>
-
-
         </div>
     );
 }

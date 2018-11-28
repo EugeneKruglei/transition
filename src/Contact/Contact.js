@@ -1,12 +1,12 @@
 import React from 'react';
-import Page from './Page';
-import './Products.css';
+import Page from '../Page';
+import './Contact.css';
 
-export default function Products(props) {
+export default function Contact(props) {
     return (
-        <div className="page products">
-
-                <h1>Products</h1>
+        <div className="page contact">
+            <section className="block slideUp">
+                <h1>Contact</h1>
 
                 <p>Toffee muffin bear claw ice cream gummies jujubes gingerbread. Apple pie bonbon pastry chocolate bar
                     bear claw wafer bonbon. Marzipan topping wafer topping cake liquorice.</p>
@@ -19,7 +19,7 @@ export default function Products(props) {
                     topping jujubes.</p>
                 <p>Cotton candy apple pie soufflé jelly-o pudding chocolate cake carrot cake. Dessert croissant carrot
                     cake gummi bears donut icing cookie. Dessert chocolate cake pastry toffee tiramisu cookie.</p>
-
+            </section>
 
 
         </div>

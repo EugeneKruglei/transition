@@ -1,11 +1,11 @@
 import React from 'react';
-import Page from './Page';
-import './Home.css';
+import Page from '../Page';
+import './Products.css';
 
-export default function Home() {
+export default function Products(props) {
     return (
-        <div className="page home">
-            <section>
+        <div className="page products">
+            <section className="block slideUp">
                 <h1>Products</h1>
 
                 <p>Toffee muffin bear claw ice cream gummies jujubes gingerbread. Apple pie bonbon pastry chocolate bar
