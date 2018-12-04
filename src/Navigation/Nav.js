@@ -3,12 +3,15 @@ import Link from 'react-router-dom/Link';
 import {NavLink} from 'react-router-dom';
 import './Nav.css';
 import logo from '../assets/MDS_logo.png';
+import PopupRegistration from "../Registration/PopUp/Popup";
+
 
 export default function Nav() {
     return (
         <nav className="nav">
             <div className="wrap">
                 <img src={require("../assets/MDS_logo.png")} alt={logo}/>
+
             </div>
 
             <div className="wrap">
@@ -65,6 +68,7 @@ export default function Nav() {
                 >
                     Contact
                 </NavLink>
+                <PopupRegistration/>
             </div>
         </nav>
 );

@@ -1,0 +1,94 @@
+.modal {
+    font-size: 16px;
+    color: black;
+}
+.modal > .header {
+    width: 100%;
+    border-bottom: 1px solid gray;
+    font-size: 18px;
+    text-align: center;
+    padding: 5px;
+}
+.modal > .content {
+    width: 100%;
+    padding: 10px 5px;
+}
+.modal > .actions {
+    width: 100%;
+    padding: 10px 5px;
+    margin: auto;
+    text-align: center;
+}
+.modal > .close {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    padding: 2px 5px;
+    line-height: 20px;
+    right: -10px;
+    top: -10px;
+    font-size: 24px;
+    background: #ffffff;
+    border-radius: 18px;
+    border: 1px solid #cfcece;
+}
+
+.profile {
+    border: 1px solid #0088cc;
+    font-size: 12px;
+    top: 15px;
+    border-radius: 0.7em 0.7em 0 0;
+    width: 24px;
+    height: 16px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+    background-image: linear-gradient(to left,transparent,transparent 50%,#0088cc 50%,#0088cc);
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all .25s ease-in;
+
+}
+.profile::before {
+    border: 1px solid #0088cc;
+    font-size: 12px;
+    content: "";
+    top: -17px;
+    width: 12px;
+    left: 4px;
+    height: 13px;
+    border-radius: 50%;
+    position: absolute;
+    background-image: linear-gradient(to left,transparent,transparent 50%,#0088cc 50%,#0088cc);
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all .1s ease-in;
+}
+.profile:hover,
+.profile:hover::before{
+    background-position: 0 0;
+    color:#fff;
+    font-weight: bold;
+    box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+}
+.active {
+    background-position: 0 0;
+    background-color: #0088cc;
+    box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+}
+.profile:active,
+.profile:active::before {
+    background-position: 0 0;
+    background-color: #0088cc;
+    box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+    /*zoom: 1.05;*/
+}
+.profile:active,
+.profile:hover {
+    border-radius: 0.7em 0.7em 0 0;
+}
+
+
+

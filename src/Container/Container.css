@@ -1,0 +1,36 @@
+form.container-fluid {
+    color: black;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+div.form-group {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+.sendout {
+    display: flex;
+    flex-direction: row;
+}
+
+label.form-label {
+    font-weight: bold;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+.form-control {
+    font-size: 16px;
+    width: 40%;
+    height: 2em;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    outline: none;
+}
+textarea.form-control {
+    color: black;
+    font-family: sans-serif;
+    font-size: 16px;
+    height: 6em;
+    width: 100%;
+}

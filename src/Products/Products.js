@@ -1,5 +1,4 @@
 import React from 'react';
-import Page from '../Page';
 import './Products.css';
 
 export default function Products(props) {

@@ -27,7 +27,7 @@
 
 @keyframes slideUp {
     0% {
-        transform: translateY(100%);
+        transform: translateY(80%);
         opacity: 0;
     }
     100% {
@@ -43,3 +43,4 @@
         margin: 2em 0;
     }
 }
+
