@@ -4,6 +4,7 @@ import {
   Route,
   Switch,
   BrowserRouter,
+    Redirect,
 } from 'react-router-dom';
 import {
   CSSTransition,
@@ -44,6 +45,12 @@ const App = ({  }) => (
                     location={location}
                     render={() => (
                       <Switch>
+                          <Route
+                              exact
+                              path="/"
+                              component={Home}
+                              /*activeClassName="active"*/
+                          />
                         <Route
                           exact
                           path="/home"

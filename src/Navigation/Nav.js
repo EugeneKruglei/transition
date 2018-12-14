@@ -7,6 +7,7 @@ import PopupRegistration from "../Registration/PopUp/Popup";
 
 
 export default function Nav() {
+
     return (
         <nav className="nav">
             <div className="wrap">
@@ -15,9 +16,16 @@ export default function Nav() {
             </div>
 
             <div className="wrap">
+               {/* <NavLink
+                    to={{
+                        pathname: '/',
+                        state: {prev: false},
+                    }}
+                ></NavLink>*/}
+
                 <NavLink
                     exact to={{
-                    pathname: '/home',
+                    pathname: '/',
                     state: {prev: false},
                 }}
                     activeClassName="selected"
@@ -68,6 +76,7 @@ export default function Nav() {
                 >
                     Contact
                 </NavLink>
+
                 <PopupRegistration/>
             </div>
         </nav>

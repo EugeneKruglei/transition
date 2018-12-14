@@ -20,12 +20,13 @@ a.nav__link {
     background-image: linear-gradient(to left,transparent,transparent 50%,#0088cc 50%,#0088cc);
     background-position: 100% 0;
     background-size: 200% 100%;
-    transition: all .25s ease-in;
+    transition: all .25s ease-in, box-shadow 1s linear;
     border: 1px solid #0088cc;
     margin: 0.5em;
     padding: 0.5em 0.5em;
     font-weight: bold;
     border-radius: 0.5em;
+
 }
 a.nav__link:hover {
     background-position: 0 0;
@@ -43,6 +44,7 @@ a.nav__link.selected {
     background-color: #0088cc;
     color:#fff;
     border-radius: 0.5em;
+    box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
 }
 
 

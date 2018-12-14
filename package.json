@@ -4,10 +4,13 @@
   "version": "0.0.49",
   "dependencies": {
     "classnames": "2.2.5",
+    "form-schema-validation": "^1.17.0",
     "prop-types": "15.6.0",
     "react": "16.0.0",
+    "react-components-form": "^3.6.0-rc-3",
     "react-dom": "16.0.0",
     "react-mail-form": "^1.0.2",
+    "react-router": "^4.3.1",
     "react-router-dom": "4.2.2",
     "react-transition-group": "2.2.1",
     "reactjs-popup": "^1.3.1",
